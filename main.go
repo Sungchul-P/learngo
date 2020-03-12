@@ -3,9 +3,25 @@ package main
 import (
 	"fmt"
 
-	"github.com/Sungchul-P/learngo/accounts"
+	"github.com/Sungchul-P/learngo/mydict"
 )
 
+func main() {
+	dictionary := mydict.Dictionary{}
+	baseWord := "hello"
+	dictionary.Add(baseWord, "First")
+	err := dictionary.Update(baseWord, "Second")
+	dictionary.Delete(baseWord)
+	word, err := dictionary.Search(baseWord)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println(word)
+	}
+}
+
+// Account Example
+/**
 func main() {
 	account := accounts.NewAccount("devnori")
 	account.Deposit(10)
@@ -19,3 +35,4 @@ func main() {
 	// fmt.Println(account.Balance(), account.Owner())
 	fmt.Println(account)
 }
+*/
