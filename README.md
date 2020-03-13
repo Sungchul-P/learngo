@@ -1,6 +1,6 @@
-# Nomader Coders Lecture
+# Nomad Coders Lecture
 
-- 본 프로젝트는 노마더 코더의 "쉽고 빠른 Go 시작하기" 실습 내용입니다.
+- 본 프로젝트는 노마드 코더의 "쉽고 빠른 Go 시작하기" 실습 내용입니다.
 
     [https://academy.nomadcoders.co/](https://academy.nomadcoders.co/)
 
